@@ -1,0 +1,28 @@
+:root {
+    --colorVerde: #0D643D;
+    --colorVerdeMusgo: #3D693D;
+    --colorVerdeOliva: #518352;
+    --colorNaranjaGris: #F6F0DB;
+    --colorNaranja: #f5c998;
+    --colorNarajaL: #edc28d;
+    --colorPlantaRod: #dfad7e;
+    --colorCuarzo: #4E4848;
+    --tipografiaGeneral: 'Alegreya Sans SC';
+}
+
+*{box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+li{list-style: none;}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--colorNaranjaGris);
+}
+figure {
+    margin: 0 auto;
+}

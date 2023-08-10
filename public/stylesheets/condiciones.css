@@ -1,0 +1,27 @@
+
+.condi__main{
+    background-color: var(--colorCuarzo);
+    color: var(--colorNaranjaGris);
+    font-family: var(--tipografiaGenera);
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 70px;
+    padding-top: 80px;
+    border-radius: 5px;
+    text-align: center;
+}
+.condi__main h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.condi__main h4{
+    font-size: 1.3rem;
+    padding: 35px;
+    text-align: center;
+}
+.condi__main--article{
+    font-size: 1rem;
+
+}
