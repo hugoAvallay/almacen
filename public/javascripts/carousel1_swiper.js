@@ -4,8 +4,8 @@ var swiper = new Swiper(".mySwiper1", {
       prevEl: ".swiper-button-prev",
     },
     autoplay: {
-        delay: 3000, 
+        delay: 3000, // Tiempo entre cada slide
         disableOnInteraction: false, 
       },
-    loop: true, //ciclo
+    loop: true, // ciclo
   });

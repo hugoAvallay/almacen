@@ -4,7 +4,6 @@
  * Module dependencies.
  */
 
-const { log } = require('console');
 var app = require('../app');
 var debug = require('debug')('src:server');
 var http = require('http');
@@ -90,4 +89,6 @@ function onListening() {
   debug('Listening on ' + bind);
 }
 
-console.log(`Server running in http://localhost:${process.env.PORT || '3000'}`);
+
+
+console.log(`Servidor corriendo en http://localhost:${process.env.PORT || 3000}`);

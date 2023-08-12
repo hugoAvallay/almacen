@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<%- include('partials/head') %>
+<%- include('./partials/head') %>
 
 <body>
-    <%- include('partials/header') %>
+
+    <%- include('./partials/header') %>
 
     <div class="home__banner">
         <div class="swiper mySwiper1">
@@ -238,9 +239,14 @@
             </div>
         </section>
 
+
+
     </main>
-    <%- include('partials/footer') %>
-    <%- include('partials/scripts') %>
+    <!-- footer -->
+    <%- include('./partials/footer') %>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="/javascripts/carousel1_swiper.js"></script>
 
 </body>
 

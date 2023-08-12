@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<%-include('../partials/head')%>
+<%- include('../partials/head') %>
 
     <body>
-        <%-include('../partials/header')%>
+
+        <%- include('../partials/header') %>
 
             <section class="form-register">
                 <figure class="registro_logo">
@@ -14,7 +15,7 @@
                 <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
                 <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
                 <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
-                <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+                <p>Estoy de acuerdo con <a href="/info/condiciones">Terminos y Condiciones</a></p>
                 <input class="botons" type="submit" value="CREAR">
                 <div class="googlefacebook">
                     <h3>o inicia sesion con</h3>
@@ -22,6 +23,7 @@
                     <i class="fa-brands fa-facebook"></i>
                 </div>
                 <p><a href="login">¿Ya tengo Cuenta?</a></p>
+
 
             </section>
 
