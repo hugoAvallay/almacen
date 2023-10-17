@@ -1,349 +1,103 @@
-.detalle-producto-main {
-  margin-top: 30px;
-}
-
-
-
-.product-details {
+.item {
+  margin: auto;
+  max-width: 1440px;
   display: flex;
-  width: 83%;
-  margin: 0 auto;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
 }
-
-.image-container {
-  border: 2px solid black;
-  width: 40%;
-  padding: 0;
-  text-align: center;
-  /* color: white; */
-  background-color: white;
-}
-
-.image-container img {
-  width: 80%;
-  margin-top: 60px;
-}
-
-
-
-.product-details-container {
-  border: 2px solid black;
-  text-align: center;
-  padding: 30px 25px;
-  background-color: lightgray;
-  width: 59%;
-}
-
-.description-prev {
+.item__picture {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   position: relative;
 }
-
-.description-prev a {
-  color: black;
+.item__picture--pill {
+  display: block;
   position: absolute;
-  top: -25px;
+  top: 0;
   right: 0;
-  bottom: 0;
-  margin-bottom: 3px;
+  font-size: 1.6em;
+  font-weight: 600;
+  background-color: #ff7070;
+  color: #ffffff;
+  padding: 1rem 2rem;
 }
-
-.name-product {
-  margin-bottom: 10px;
+.item__picture--img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: contain;
+  animation: fade 0.7s;
 }
-
-.description--precio,
-.price {
-  color: black;
-  font-size: 15px;
-  margin-bottom: 10px;
+.item__picture--img--2 {
+  display: none;
 }
-
-.option {
-  margin-bottom: 18px;
-  /* text-align: center; */
+.item__picture:hover .item__picture--img--1 {
+  display: none;
+}
+.item__picture:hover .item__picture--img--2 {
+  animation: fade 0.7s;
+  display: block;
+}
+.item__info {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-grow: 1;
 }
-
-.option-icon .fa-credit-card{
-  color: blue;
+.item__info--licence {
+  font-size: 1.6em;
+  color: #4f4f4f;
+  font-weight: 400;
 }
-
-
-.option-icon .fa-truck{
-  color: green;
+.item__info--name {
+  font-size: 3.8em;
 }
-.card__credit {
-  margin-bottom: 20px;
+.item__info--description {
+  font-size: 2.4em;
+  color: #4f4f4f;
+  font-weight: 400;
+  max-width: 70%;
 }
-
-.compra {
-  margin-bottom: 10px;
-  background-color: var(--colorVerdeOliva);
-  border-radius: 5px;
+.item__info--price {
+  font-size: 3.8em;
 }
-
-.add-to-cart {
-  border-radius: 5px;
-  background-color: var(--colorNaranja);
+.item__form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
 }
-
-.section__description {
-  border: 2px solid black;
-  padding: 10px;
-  background-color: lightgray;
-  margin: 15px auto;
-  width: 65%;
-
-}
-
-.section__description {
+.item__form--btn, .item__form--input {
+  padding: 0.4rem;
+  font-size: 2.4em;
+  width: 50px;
   text-align: center;
 }
-
-.section__description h3 {
-  margin-bottom: 8px;
+.item__form--btn {
+  background-color: #4f4f4f;
+  color: #ffffff;
+  border: 3px solid #4f4f4f;
+  cursor: pointer;
 }
-
-.section__description p {
-  margin-bottom: 20px;
+.item__form--btn:hover {
+  opacity: 0.7;
 }
-
-.home__aside {
-  width: 70%;
-  margin: 30px auto 0;
-
-
+.item__form--submit {
+  background-color: #ff3333;
+  color: #ffffff;
+  font-size: large;
+  padding: 1rem 1.5rem;
+  border: none;
+  cursor: pointer;
 }
-
-.section__aside--descripcion {
-  background-color: #ccc;
-  padding: 10px;
-  text-align: center;
-  border: 1px solid black;
-  margin-bottom: 20px;
-
-
-}
-
-.section__aside--descripcion p {
-  line-height: 1.5;
-
-}
-
-@media(min-width:768px) {
-
-  .detalle-producto-main {
-    display: flex;
-    width: 70%;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-
-
-  }
-
-  .product-details {
-    width: 70%;
-
-
-
-  }
-
-  .section__description {
-    margin: 1px auto;
-  }
-
-
-  .section__description {
-    width: 40%;
-    padding: 30px 10px;
-
-
-
-  }
-
-  .quantity-control {
-    /* justify-content: center; */
-  }
-
-
-}
-
-
-
-@media(min-width:1024px) {
-
-  .detalle-producto-main {
-    margin-top: 30px;
-  }
-  /*   header {
-
-    margin-bottom: 30px; esto tambien manito
-  }
- */
-
-  .detalle-producto-main {
-    display: flex;
-    width: 95%;
-
-
-
-  }
-
-  .image-container {
-    border: 2px solid black;
-    width: 45%;
-    padding: 0;
-    text-align: center;
-
-
-
-  }
-
-  .image-container img {
-    width: 40%;
-  }
-
-  .product-details-container {
-    width: 48%;
-    text-align: center;
-  }
-
-
-
-  .section__description {
-    width: 40%;
-
-
-
-
-  }
-
-
-
-
-  /* informacion-producto */
-  .product-info {
-    border: 1px solid black;
-    padding: 50px 40px;
-   
-
-
-  }
-
-  .name-product {
-    margin-bottom: 5px;
-  }
-
-  .description--precio,
-  .price {
-    color: black;
-    font-size: 25px;
-    margin-bottom: 10px;
-  }
-
-
-  .product-options{
-    /* text-align: center; */
-  }
-
-  .option {
-  /*   margin-left: 0px; */
-    display: flex;
-    align-items: center;
-    /* Alineamos los elementos verticalmente */
-  }
-
-
-
-  .option-icon {
-    width: 40px;
-    height: 40px;
-    background-color: #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-    
-  }
-
- 
-
-  
-
-
-  .card__credit {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 5px;
-  }
-
-
-  /* botones */
-  .buttons {
-    display: flex;
-    flex-direction: column;
-
-
-  }
-
-
-  .compra {
-    margin-bottom: 10px;
-    background-color: var(--colorVerdeOliva);
-    border-radius: 5px;
-  }
-
-  .add-to-cart {
-    border-radius: 5px;
-    background-color: var(--colorNaranja);
-  }
-
- 
-
-  /* caracteristicas principales */
-  .section__description {
-    border: 1px solid black;
-    padding: 30px;
-    background-color: lightgray;
-  }
-
-  .section__description {
-    text-align: center;
-  }
-
-  .section__description h3 {
-    margin-bottom: 8px;
-  }
-
-  .section__description p {
-    margin-bottom: 20px;
-  }
-
-
-  /* aside-descripcion */
-
-  .home__aside {
-    width: 60%;
-    margin: 30px auto 0;
-
-
-  }
-
-  .section__aside--descripcion {
-    background-color: #ccc;
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-
-
-  }
-
-  .section__aside--descripcion p {
-    line-height: 1.5;
-
-  }
-
+.item__form--submit:hover {
+  background-color: #ff7070;
 }

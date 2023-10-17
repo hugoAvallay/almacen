@@ -1,8 +1,13 @@
 const express = require('express');
 const router = express.Router();
-const indexController = require('../controllers/indexController');
+const {index,admin, search} = require('../controllers/indexController');
+const checkAdmin = require('../middlewares/checkAdmin');
 
 /* GET home page. */
-router.get('/', indexController.index);
+router.get('/',index);
+router.get('/admin',checkAdmin,admin)
+router.get('/search', search);  //
+
+
 
 module.exports = router;

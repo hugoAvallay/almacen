@@ -1,0 +1,21 @@
+[
+   {
+      "id": "b0584e67-2af6-4a9e-8355-be2138ee316f",
+      "name": "omar",
+      "surname": "zerpa",
+      "email": "omarzerpa316@gmail.com",
+      "password": "$2a$10$ITSbKT5b8t96EUNxpE9nxOIXPvHZMqZddWy4mTjQkVlul0uqN/ezW",
+      "rol": "admin",
+      "birthday": null
+   },
+   {
+      "id": "7770d8d2-d981-41c4-8e87-eefcce5dcbe7",
+      "name": "Hugo Hernan",
+      "surname": "Avallay",
+      "email": "h40hugo@gmail.com",
+      "password": "$2a$10$rp6kJ76QSkFRDR7OhE6Gse.HTXWTD9q2lbnuv//Ag6TbG//MjJ1Mi",
+      "rol": "admin",
+      "birthday": "1986-02-20",
+      "gender": "v"
+   }
+]

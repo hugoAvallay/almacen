@@ -1,0 +1,28 @@
+<a href="/products/detalleProducto/<%= id %>">
+    <div class="home_producto">
+        <div class="home_producto-img">
+            <img src="/images/products/<%= image %>" alt="Vino">
+        </div>
+        <div class="home_info">
+            <span class="home_tipo-envio">Envio con Normalidad</span>
+            <div class="home_precio-oferta">
+                <span class="home_precio"> $<%= toThousand(price) %></span>
+                <span class="home_oferta">
+                    <%= discount %>% OFF
+                </span>
+                <span class="home_descuento">Descuento</span>
+            </div>
+            <span class="home_precio-envio">Envio gratis</span>
+            <span class="home_descripcion">
+                <%= name %>
+            </span>
+            <div class="home_calificacion">
+                <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
+                <span>19999</span>
+            </div>
+
+        </div>
+
+    </div>
+</a>
