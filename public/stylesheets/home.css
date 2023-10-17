@@ -360,6 +360,10 @@
 }
 
 @media (min-width:768px) {
+    .home__banner {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
     .home__banner img {
         display: block;
         width: 100%;
