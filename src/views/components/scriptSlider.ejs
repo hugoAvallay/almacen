@@ -1,0 +1,53 @@
+<script>
+    new Glide('.glide', {
+        type: 'slider',
+        startAt: 0,
+        perView: 5,
+        gap: 20,
+        breakpoints: {
+            1024: {
+                perView: 4
+            },
+            869: {
+                perView: 3
+            },
+            580: {
+                perView: 2
+            }
+        }
+    }).mount(),
+        new Glide('#destacados', {
+            type: 'slider',
+            startAt: 0,
+            perView: 5,
+            gap: 20,
+            breakpoints: {
+                1024: { 
+                    perView: 4 
+                },
+                869: { 
+                    perView: 3 
+                },
+                580: { 
+                    perView: 2 
+                }
+            }
+        }).mount(),
+        new Glide('#ofertas', {
+            type: 'slider',
+            startAt: 0,
+            perView: 5,
+            gap: 20,
+            breakpoints: {
+                1024: { 
+                    perView: 4 
+                },
+                869: { 
+                    perView: 3 
+                },
+                580: { 
+                    perView: 2 
+                }
+            }
+        }).mount();
+</script>

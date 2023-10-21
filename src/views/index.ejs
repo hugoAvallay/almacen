@@ -55,40 +55,62 @@
                     </div>
                 </section>
 
-                <section class="home__main__section">
+<!-- ---------------------------------------------------------------------------- -->
+                <section class=" glide home__main__section">
                     <div class="home__detalle_section">
                         <h2>Productos más vendidos</h2>
                         <a class="section__link-ver-mas" href="#">Ver más</a>
                     </div>
-                    <div class="home__main__section__contenedor-articulos">
-                        <% visited.forEach(product=> { %>
-                            <%- include('partials/products',{ ...product, toThousand }) %>
-                                <% }) %>
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides ">
+
+                            <% visited.forEach(product=> { %>
+                                <li class="glide__slide">
+                                    <%- include('partials/products',{ ...product, toThousand }) %>
+                                </li>
+                            <% }) %>
+                        </ul>
                     </div>
+                    <%- include('./components/buttonSlider') %>
                 </section>
 
-                <section class="home__main__section">
+<!-- ------------------------------------------------------------------------- -->
+                <section id="destacados" class="glide home__main__section">
                     <div class="home__detalle_section">
                         <h2>Productos destacados</h2>
                         <a class="section__link-ver-mas" href="#">Ver más</a>
                     </div>
-                    <div class="home__main__section__contenedor-articulos">
-                        <% sale.forEach(product=> { %>
-                            <%- include('partials/products',{ ...product, toThousand }) %>
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides ">
+                            
+                                <% sale.forEach(product=> { %>
+                                    <li class="glide__slide">
+                                        <%- include('partials/products',{ ...product, toThousand }) %>
+                                    </li>
                                 <% }) %>
+                        </ul>
                     </div>
+                    <%- include('./components/buttonSlider') %>
                 </section>
-
-                <section class="home__main__section">
+<!-- ------------------------------------------------------------------------------------ -->
+                
+                
+                <section id="ofertas" class="glide home__main__section">
                     <div class="home__detalle_section">
                         <h2>Ofertas</h2>
                         <a class="section__link-ver-mas" href="#">Ver más</a>
                     </div>
-                    <div class="home__main__section__contenedor-articulos">
-                        <% more.forEach(product=> { %>
-                            <%- include('partials/products',{ ...product, toThousand }) %>
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides ">
+                            
+                                <% more.forEach(product=> { %>
+                                    <li class="glide__slide">
+                                        <%- include('partials/products',{ ...product, toThousand }) %>
+                                    </li>
                                 <% }) %>
+                        </ul>
                     </div>
+                    <%- include('./components/buttonSlider') %>
                 </section>
 
 
@@ -96,10 +118,9 @@
             </main>
             <!-- footer -->
             <%- include('./partials/footer') %>
-
-                <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-                <script src="/javascripts/carousel1_swiper.js"></script>
-
+            <%- include('./components/scriptSlider') %>
+            
+            
     </body>
 
 </html>
