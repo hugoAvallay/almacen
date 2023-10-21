@@ -1,6 +1,6 @@
 .main-header a {
     font-size: 0.9em;
-    font-weight: 400;
+    font-weight: 500;
     color: #ffffff;
 }
 /*====main-header== Main Header ======*/
@@ -77,7 +77,8 @@
     }
 
     .navegacion_derecha{
-        width: 35%;       
+        width: 38%;
+        padding-bottom: 1em;
     }
     .main_header-navBar ul{
         display: flex;
@@ -113,6 +114,7 @@
         /* Otras propiedades de estilo que desees */
         color: #ffffff;
         font-size: 1em;
+        font-weight: 500;
     }
     .user-dropdown option {
         color: black;

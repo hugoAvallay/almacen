@@ -19,6 +19,7 @@
       "description": "Musse de Chocolate blanco y negro",
       "categoryType": "Alfajor",
       "categoryDestacad": "visited",
+      "shipment": "Envio gratis",
       "price": 120,
       "discount": 10,
       "image": "cahafaz1.jpg",
@@ -31,6 +32,7 @@
       "description": "EL mas esquisito baño de chocolate con crocantes de frutos secos en dulce de leche",
       "categoryType": "Alfajor",
       "categoryDestacad": "in-sale",
+      "shipment": null,
       "price": 480,
       "discount": 10,
       "image": "1694399791975_products_.webp",
@@ -44,6 +46,7 @@
       "description": "Dos galletitas rellenas con una deliciosa conbinación de mucho dulce de leche, castañas de cajú y nueces, cubierta de una capa del mas puro chocolate",
       "categoryType": "Alfajor",
       "categoryDestacad": "more-sale",
+      "shipment": "Envio gratis",
       "price": 340,
       "discount": 0,
       "image": "havanna.jpg",
@@ -56,6 +59,7 @@
       "description": "Un malbec con aroma a frutos rojos, con una graduacion alcoholica de 14%",
       "categoryType": "Vino",
       "categoryDestacad": "more-sale",
+      "shipment": null,
       "price": 16000,
       "discount": 10,
       "image": "REPUBLICA2019-01.jpg",
@@ -68,6 +72,7 @@
       "description": "Un malbec con aroma a frutos rojos, con una graduacion alcoholica de 14%",
       "categoryType": "Vino",
       "categoryDestacad": "more-sale",
+      "shipment": "Envio gratis",
       "price": 16000,
       "discount": 10,
       "image": "REPUBLICA2019-01.jpg",
@@ -80,12 +85,12 @@
       "description": "Un vino que te delitara, un Cabernet Sauvignon",
       "categoryType": "Vino",
       "categoryDestacad": "in-sale",
+      "shipment": "Envio gratis",
       "price": 850000,
       "discount": 0,
       "image": "vultorno-estuche.jpg",
       "stock": ""
    },
-   
    {
       "id": "900832c5-f01e-42fc-a63f-a5934b718c07",
       "name": "Felipe Rutini 1989",
@@ -93,12 +98,12 @@
       "description": "Cosecha 1989, petencial de guarda 30 años. Etiqueta ultra premiun",
       "categoryType": "Vino",
       "categoryDestacad": "visited",
+      "shipment": "Envio gratis",
       "price": 160000,
       "discount": 10,
       "image": "estuche-rutini-cabernet-malbec-750-ml.jpg",
       "stock": ""
    },
-   
    {
       "id": "900832c5-f01e-42fc-a63f-a5934b718c07",
       "name": "Felipe Rutini 1989",
@@ -106,6 +111,7 @@
       "description": "Cosecha 1989, petencial de guarda 30 años. Etiqueta ultra premiun",
       "categoryType": "Vino",
       "categoryDestacad": "visited",
+      "shipment": "Envio gratis",
       "price": 160000,
       "discount": 10,
       "image": "estuche-rutini-cabernet-malbec-750-ml.jpg",
@@ -118,6 +124,7 @@
       "description": "Cosecha año 2022, Amarillo brillante, con reflejos verdosos. Internamente aromatico, de caracter citrico que recuerda al pomelo rosado y algunos toques herbáceos. Frutado y fresco en boca. Etiqueta ultra premiun",
       "categoryType": "Vino",
       "categoryDestacad": "visited",
+      "shipment": "Envio gratis",
       "price": 560000,
       "discount": 10,
       "image": "Rutini-Sauvignon-Blanc.png",
@@ -130,6 +137,7 @@
       "description": "Yerba mate sabor barbacuá, artesanal, energizante",
       "categoryType": "Yerba",
       "categoryDestacad": "visited",
+      "shipment": null,
       "price": 1200,
       "discount": 10,
       "image": "yerba-orig.png",
@@ -142,6 +150,7 @@
       "description": "Yerba mate elaborada con palo, compuesta con poleo. No produce acidez",
       "categoryType": "Yerba",
       "categoryDestacad": "more-sale",
+      "shipment": null,
       "price": 1200,
       "discount": 15,
       "image": "yerba-buena.png",
@@ -198,5 +207,16 @@
       "creatAt": "2023-09-02T20:33:08.834Z",
       "stock": null,
       "createdAt": "2023-09-11T02:44:11.531Z"
+   },
+   {
+      "id": "7834bf9d-1360-4951-bf3b-5421a46ec1f1",
+      "name": "Vinito",
+      "brand": "bodega",
+      "categoryType": "Vino",
+      "price": 12222,
+      "discount": 0,
+      "image": "1697837942389_products_.jpg",
+      "description": "Este producto es dulzon",
+      "creatAt": "2023-10-20T21:39:02.396Z"
    }
 ]

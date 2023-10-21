@@ -126,8 +126,15 @@
     border-radius: 3px;
     margin-bottom: 0.1em;
 }
+.product-detail-price {
+    margin: 0.2em 0;
+}
 .home_precio {
     font-size: 1em;
+}
+.home_precio-subrall {
+    text-decoration: line-through;
+    color: #666666;
 }
 .home_oferta{
     color: rgb(0, 166, 80);
@@ -261,7 +268,7 @@
         -webkit-filter: grayscale(0);
         -webkit-transform: scale(1.07);
     }
-
+    
     /* -------seccion ventas articulos--------- */
     .home__main__section{
         margin-bottom: 4em;
@@ -361,13 +368,14 @@
 
 @media (min-width:768px) {
     .home__banner {
-        max-width: 1300px;
+        max-width: 1380px;
         margin: 0 auto;
     }
     .home__banner img {
         display: block;
         width: 100%;
         height: 100%;
+        object-fit: cover;
         
     }
 
@@ -407,7 +415,8 @@
     }
     .home_producto {
         max-width: 220px;
-        max-height:  410px;
+        min-height: 380px;
+        max-height:  400px;
     } 
 
 /*     

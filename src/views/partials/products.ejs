@@ -6,11 +6,17 @@
         <div class="home_info">
             <span class="home_tipo-envio">Envio con Normalidad</span>
             <div class="home_precio-oferta">
-                <span class="home_precio"> $<%= toThousand(price) %></span>
-                <span class="home_oferta">
-                    <%= discount %>% OFF
-                </span>
-                <span class="home_descuento">Descuento</span>
+
+                <% if (discount) { %>
+                    <p class="product-detail-price small"><span class="home_precio-subrall" >$<%= toThousand(price) %></span></p>
+                    <span class= "home_precio">$<%=toThousand(price - (price*discount/100).toFixed(0))%></span>
+                    <span class="home_oferta"><%= discount %> % OFF</span>
+
+                    <% } else{ %>
+                        <span class="home_precio">$<%= toThousand(price) %></span>
+                        
+                        <% } %>
+
             </div>
             <span class="home_precio-envio">Envio gratis</span>
             <span class="home_descripcion">
