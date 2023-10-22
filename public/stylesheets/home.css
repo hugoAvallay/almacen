@@ -127,15 +127,18 @@
     border-radius: 3px;
     margin-bottom: 0.1em;
 }
-.product-detail-price {
+.home_info-precio {
     margin: 0.2em 0;
+    font-size: 1.1em;
 }
+
 .home_precio {
     font-size: 1em;
 }
 .home_precio-subrall {
     text-decoration: line-through;
     color: #666666;
+    font-size: 0.8em;
 }
 .home_oferta{
     color: rgb(0, 166, 80);
@@ -295,8 +298,8 @@
     }
     .home_producto {
         max-width: 200px;
-        min-height: 400px;
-        max-height:  410px;
+        min-height: 380px;
+        max-height:  385px;
     } 
 
     .home_producto {
@@ -421,8 +424,8 @@
     }
     .home_producto {
         max-width: 220px;
-        min-height: 400px;
-        max-height:  400px;
+        min-height: 385px;
+        max-height:  385px;
     } 
 
 /*     
@@ -468,7 +471,7 @@
         margin-bottom: 0.1em;
     }
     .home_precio {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 
     .home_descuento {
@@ -479,6 +482,7 @@
     .home_descripcion, .home_precio-envio {
         font-size: 0.8em;
     }
+    
     
     .home_producto:hover .home_calificacion {
         opacity: 1;

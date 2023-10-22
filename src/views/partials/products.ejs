@@ -8,7 +8,7 @@
             <div class="home_precio-oferta">
 
                 <% if (discount) { %>
-                    <p class="product-detail-price small"><span class="home_precio-subrall" >$<%= toThousand(price) %></span></p>
+                    <p class="home_info-precio"><span class="home_precio-subrall" >$<%= toThousand(price) %></span></p>
                     <span class= "home_precio">$<%=toThousand(price - (price*discount/100).toFixed(0))%></span>
                     <span class="home_oferta"><%= discount %> % OFF</span>
 

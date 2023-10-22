@@ -13,7 +13,7 @@
               <img src="/images/products/<%= image %>" alt="product image" class="product-detail-img">
               
             </div>
-            <div class="col-12 col-md-4 col-lg-6">
+            <div class="col-12 col-md-5 col-lg-6 my-auto">
               <article class="product-detail-info">
                 <span class="item__info--licence">nombre categoria</span>
                 <h2 class="product-detail-title"><%= name %></h2>
@@ -21,14 +21,13 @@
                   <%= description %>
                 </p>
                 <% if (discount) { %>
-                  <p class="product-detail-price small">
-                    <span class="home_precio-subrall">$<%= toThousand(price) %></span>
-                    /
-                    <b><%= discount%>% OFF</b>
+                  
+                    <span class="productDetail_precio-subrall">$<%= toThousand(price) %></span>
+                  
+                  <p class= "product-detail-priceDiscount col-12 d-flex">
+                    <span class="product-detail-price">$<%= toThousand(price-(price*discount/100).toFixed(0)) %></span>
+                    <span class="product-detail-discount"><%= discount%>% OFF</span>
                   </p>
-                  <span class="product-detail-price">
-                    $<%= toThousand(price-(price*discount/100).toFixed(0)) %>
-                  </span>
                   
                 <% } else{ %>
                   <p class="product-detail-price">
