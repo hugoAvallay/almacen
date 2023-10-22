@@ -83,6 +83,7 @@
     transition-duration: 0.3s;
     border-collapse: collapse;
     margin: 0.8em auto;
+    overflow: hidden;
 
 }
 
@@ -292,6 +293,11 @@
         
 
     }
+    .home_producto {
+        max-width: 200px;
+        min-height: 400px;
+        max-height:  410px;
+    } 
 
     .home_producto {
         max-width:  200px;
@@ -416,7 +422,7 @@
     .home_producto {
         max-width: 220px;
         min-height: 400px;
-        max-height:  410px;
+        max-height:  400px;
     } 
 
 /*     
